@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+    }
+    .container{
+      background-color: rgb(255, 7, 7);
+      border: 2px solid rgb(0, 0, 0);
+      padding: 20px;
+      border-radius: 0.6rem;
+      height: 400px;
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 200px;
+      overflow: scroll;
+    }
+    img{
+      height: 30%;
+      border-radius: 10px;
+      border: 1px solid black;
+      transition: 0.4s ;
+      cursor: pointer;
+     
+    }
+    .hello:hover{
+      translate: 0px -30px;
+     
+    }
+    .hello:not(:hover){
+      filter: grayscale(100%);
+    }
+    
+    @media only screen and (min-width: 320px) {
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width:50%;
+      }
+
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <img  class="hello" src="img_5terre.jpg" alt="Tree">
+    <img  class="hello"src="img_forest.jpg" alt="Forest">
+    <img class="hello" src="img_mountains.jpg" alt="Mountains">
+  </div>
+</body>
+</html>
